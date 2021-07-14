@@ -40,7 +40,7 @@ class FeedBack extends Component {
     return (
       <div className={s.wrapper}>
         <Section title="Please leave feedback" flag={true}>
-          <FeedbackOptions onClick={this.handleFeedback} />
+          <FeedbackOptions onClick={this.handleFeedback} state={this.state} />
         </Section>
         <Section title="Statistics" flag={false}>
           {totalFn > 0 ? (
